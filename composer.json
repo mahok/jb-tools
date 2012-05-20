@@ -12,6 +12,8 @@
         "symfony/finder": "dev-master"
     },
     "autoload": {
-        "Mahok/JbTools": "src/"
+        "psr-0": {
+            "Mahok": "src/"
+        }
     }
 }

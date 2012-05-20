@@ -44,12 +44,15 @@ class Import extends Command
         $finder = new Finder();
         $finder->files()->name('gallery.xml')->in($inputPath)->depth($depth);
 
+        $countImports = 0;
         foreach ($finder as $file) {
             $basePath = substr($file->getPathname(), 0, strlen($file->getPathname()) - strlen($file->getFilename()));
             $output->write("Processing '<info>{$basePath}</info>'...");
             $gallery = Gallery::importFromSv2($file->getPathname());
             $gallery->save();
+            $countImports++;
             $output->writeln(" done.");
         }
+        $output->writeln("\n<info>{$countImports}</info> galleries were migrated to Juicebox.");
     }
 }
