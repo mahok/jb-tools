@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Mahok\JbTools\Command;
+
+$app = new Application();
+$app->add(new Command\Import());
+$app->run();
