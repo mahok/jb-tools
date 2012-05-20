@@ -1,0 +1,17 @@
+{
+    "name": "mahok/jb-tools",
+    "description": "Work with Juicebox PRO-galleries from the command line.",
+    "authors": [
+        {
+            "name": "Denis Brumann",
+            "email": "dbrumann@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "dev-master",
+        "symfony/finder": "dev-master"
+    },
+    "autoload": {
+        "Mahok/JbTools": "src/"
+    }
+}
