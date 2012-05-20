@@ -1,6 +1,6 @@
 {
     "name": "mahok/jb-tools",
-    "description": "Work with Juicebox PRO-galleries from the command line.",
+    "description": "JbTools is my personal replacement for the JuiceboxBuilder shipped with Juicebox.",
     "license": "MIT",
     "authors": [
         {
