@@ -23,8 +23,8 @@ class Import extends Command
     protected function configure()
     {
         $this
-            ->setName('jb:convert')
-            ->setDescription('Converts SimpleViewer\'s gallery.xml to Juicebox\'s config.xml')
+            ->setName('jb:import')
+            ->setDescription('Imports data from old gallery.xml into a new config.xml')
             ->addArgument('source', InputArgument::REQUIRED, 'Source folder containing sv2-gallery/galleries')
             ->addOption('depth', 'd', InputOption::VALUE_OPTIONAL, 'Look into subfolders up to this depth', 0)
         ;
