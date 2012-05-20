@@ -1,6 +1,7 @@
 {
     "name": "mahok/jb-tools",
     "description": "Work with Juicebox PRO-galleries from the command line.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Denis Brumann",
